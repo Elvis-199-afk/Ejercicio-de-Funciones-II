@@ -65,13 +65,15 @@ int main(){
 	int numero, pjugador=0, pbot=0;
 	srand(time(0));	
 	
-	cout<<"PIEDRA PAPEL TIJERA"<<endl<<endl;
+	cout<<"BIENVENIDO AL JUEGO PIEDRA PAPEL O TIJERA"<<endl<<endl;
+	cout<<"Ingrese 'PIEDRA', 'PAPEL' o 'TIJERA' para comenzar el juego"<<endl;
 	while(pjugador!=3 && pbot!=3){
 		cout<<endl;
+		cout<<"Tu: ";
 		cin>>jugador;
 		numero=rand()%3+1;
 		bot=ppt(numero);
-		cout<<bot;
+		cout<<"Bot: "<<bot;
 		
 		gp=winolose(jugador, bot);
 		

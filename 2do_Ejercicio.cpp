@@ -12,7 +12,7 @@ int main(){
 	cin>>maximo;
 	cout<<"Los "<<cantidadNumeros<<" numeros aleatorios generados entre 0 y "<<maximo<<" son: "<<endl;
 	for(int i=1;i<=cantidadNumeros;i++){
-		int aleatorio=rand() % maximo + 0;
+		int aleatorio=rand() % maximo + 1;
 		cout<<aleatorio<<endl;
 		
 	}
